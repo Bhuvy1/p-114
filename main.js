@@ -24,6 +24,7 @@ function modelLoaded()
   console.log('PoseNet Is Initialized');
 }
 
+
 function gotPoses(results)
 {
   if(results.length > 0)
@@ -36,11 +37,14 @@ function gotPoses(results)
   }
 }
 
+
 function draw()
 {
   image(video, 0, 0, 400, 400)
-  image(mustache.png, noseX, noseY+10, 30, 30)
+  image(mustache, noseX, noseY+10, 30, 30)
 }
+
+
 
 
  
